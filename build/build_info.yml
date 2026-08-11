@@ -1,0 +1,62 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/PRADEEP/zephyrproject/my_servo_project'
+    source-dir: 'C:/Users/PRADEEP/zephyrproject/my_servo_project'
+  board:
+    name: 'esp32_devkitc'
+    path:
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/boards/espressif/esp32_devkitc'
+    qualifiers: 'esp32/procpu'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/bindings'
+    files:
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu.dts'
+     - 'C:/Users/PRADEEP/zephyrproject/my_servo_project/app.overlay'
+    include-dirs:
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/ambiq/dts'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/atmel/include'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/bouffalolab/include'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/gigadevice/include'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/infineon/dts'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/microchip/include'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/microchip/dts'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/nuvoton/dts'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/nxp/dts'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/stm32/dts'
+     - 'C:/Users/PRADEEP/zephyrproject/modules/hal/ti/dts'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/include'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/include/zephyr'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/common'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/vendor'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/rx'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/x86'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/xtensa'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/sparc'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/riscv'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/posix'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/arm64'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/arm'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts/arc'
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/dts'
+    user-files:
+     - 'C:/Users/PRADEEP/zephyrproject/my_servo_project/app.overlay'
+  kconfig:
+    files:
+     - 'C:/Users/PRADEEP/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu_defconfig'
+     - 'C:/Users/PRADEEP/zephyrproject/my_servo_project/prj.conf'
+    user-files:
+     - 'C:/Users/PRADEEP/zephyrproject/my_servo_project/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/PRADEEP/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: 'C:/Users/PRADEEP/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\Users\PRADEEP\zephyrproject\.venv\Scripts\west build -p always -b esp32_devkitc_wroom/esp32/procpu .'
+  topdir: 'C:\Users\PRADEEP\zephyrproject'
+  version: '1.5.0'
